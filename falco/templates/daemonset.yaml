@@ -67,6 +67,9 @@ spec:
               - BPF
               - SYS_RESOURCE
               - PERFMON
+              - SYS_PTRACE
+              drop:
+              - ALL
             {{- end }}
           args:
             - /usr/bin/falco
